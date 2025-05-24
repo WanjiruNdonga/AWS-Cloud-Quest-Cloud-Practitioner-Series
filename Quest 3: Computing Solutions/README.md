@@ -99,7 +99,7 @@ Having conquered the ins and outs of EC2 management, I'm more hyped than ever fo
 
 Curious about AWS Cloud Quest, cloud security, or just want to chat about making tech fierce and fun? Let’s connect!
 
-* 💼 [My LinkedIn Profile](https://www.linkedin.com/in/mercy-ndonga/) *(Remember to replace with your actual LinkedIn URL!)*
+* 💼 [My LinkedIn Profile](https://www.linkedin.com/in/mercy-ndonga/)
 * 🌍 Nairobi-based, globally curious 🌍
 
 ---
