@@ -1,6 +1,6 @@
 # Quest 3: Computing Solutions – Deep Dive into EC2 Magic! 🧠💻
 
-Alright, cloud connoisseurs! Ready for another installment of my AWS Cloud Quest chronicles? ✨💅. After launching my first EC2 instance in Quest 2, **Quest 3: Computing Solutions** was the ultimate deep dive into understanding, connecting to, and even *filtering* those powerful virtual servers. Think of it as peeling back the layers of the compute onion – and yes, it was deliciously complex! 🥂
+After launching my first EC2 instance in Quest 2, **Quest 3: Computing Solutions** was the ultimate deep dive into understanding, connecting to, and even *filtering* those powerful virtual servers. Think of it as peeling back the layers of the compute onion – and yes, it was deliciously complex! 🥂
 
 This quest was about gaining true mastery over EC2, moving beyond just "launching" to truly "managing" them. My journey towards becoming a Cloud Security Specialist demands I know my compute resources inside and out, and this lab delivered!
 
@@ -37,44 +37,46 @@ This lab felt like gaining superpowers over my EC2 instances. From filtering thr
 **1. Setting the Stage & EC2 Dashboard Recon:**
 As always, first things first: confirm the region (N. Virginia, `us-east-1`) and navigate to the EC2 Dashboard. I then clicked on "Instances" in the left navigation pane. My trusty virtual server from Quest 2 was waiting for its next set of instructions!
 
-* *[Insert Screenshot: EC2 Dashboard and Instances List]*
-* *Caption: Back at the EC EC2 Dashboard, ready to explore my running instances.*
+![Screenshot (2131)](https://github.com/user-attachments/assets/fcd79c03-7fd1-4ad5-a518-72a0756efcb0)
+*Back at the EC2 Dashboard, ready to explore my running instances.*
 
 **2. Instance Deep Dive: Details and Public IP:**
 I selected my `AWS Computing Solutions` instance [cite: 25, 52] to review its nitty-gritty details. It was running (`Running` state), a `t3.small` instance type, and I found its Public IPv4 address. This IP was key for accessing the instance's metadata later.
 
-* *[Insert Screenshot: EC2 Instance Details Tab with Public IP Highlighted]*
-* *Caption: Inspecting my EC2 instance's vitals, including its crucial Public IP address.*
+![Screenshot (2135)](https://github.com/user-attachments/assets/ec6e13d9-c7f2-48e2-8b17-9454a1f3b658)
+*Inspecting my EC2 instance's vitals, including its crucial Public IP address.*
 
 **3. Peeking Behind the Curtain: Instance Metadata!**
 The fun part! I copied the Public IPv4 address and pasted it into a new browser tab (remembering to use `http://`). This displayed the instance's metadata – data about my instance that can be used to configure or manage. It was a direct look at the server's own internal monologue about itself, from instance ID to availability zone and instance type[cite: 61]. Talk about self-awareness!
 
-* *[Insert Screenshot: Instance Metadata in Browser]*
-* *Caption: My EC2 instance, proudly displaying its own metadata in a browser – hello, introspection!*
+![Screenshot (2137)](https://github.com/user-attachments/assets/b84d8427-2d88-41e1-a482-a623bd04fbdc)
+*My EC2 instance, proudly displaying its own metadata in a browser – hello, introspection!*
 
 **4. Exploring the Universe of Instance Types:**
 Next, I ventured into the "Instance Types" section to understand the vast selection Amazon EC2 provides. Instance types belong to instance families, optimized for different use cases. It's like a menu of digital brains, each with different CPUs, memory, and architectures!
 
-* *[Insert Screenshot: EC2 Instance Types Page]*
-* *Caption: A galaxy of EC2 instance types. So many choices, so little time!*
+![Screenshot (2132)](https://github.com/user-attachments/assets/e3ffca74-ef93-4825-8c8e-7d9b89c8a89f)
+*A galaxy of EC2 instance types. So many choices, so little time!*
 
 **5. Filtering for Perfection: Finding My Ideal Match:**
 This was where the filter skills came in handy! I filtered instances based on specific attributes. I typed in `t3.large`, `c5.large`, and `r5.large` to see how these types compared. Being able to filter instance attributes helps zero in on the perfect fit for any workload.
 
-* *[Insert Screenshot: Filtering EC2 Instance Types (t3.large, c5.large, r5.large)]*
-* *Caption: Filtering EC2 instance types – because a Cloud Security Specialist always finds the perfect fit!*
+![Screenshot (2133)](https://github.com/user-attachments/assets/757f7e57-b06e-4ebf-bef3-690ee6b0b815)
+*Filtering EC2 instance types – because a Cloud Security Specialist always finds the perfect fit!*
 
 **6. Connecting with Session Manager: SSH, Who?**
 This was a major win for efficiency and security! I connected to my EC2 instance using **Amazon EC2 Session Manager**. This tool, part of AWS Systems Manager, allowed me to get a terminal session to my instance right from the console, without needing to mess with SSH keys. Smooth, secure, and totally fabulous!
 
-* *[Insert Screenshot: Connecting to EC2 via Session Manager]*
-* *Caption: Securely connecting to my EC2 instance with Session Manager – no SSH keys, no fuss!*
+![Screenshot (2142)](https://github.com/user-attachments/assets/df26c87e-a06a-4adb-9ee8-3db9136dc71b)
+![Screenshot (2143)](https://github.com/user-attachments/assets/7ac08b65-c7ef-4831-83eb-cdebc0e74cdf)
+*Securely connecting to my EC2 instance with Session Manager – no SSH keys, no fuss!*
 
 **7. Commanding My Instance: Start & Stop Power!**
 Finally, I practiced the fundamental lifecycle management of an EC2 instance: starting and stopping it. This is crucial for cost optimization and managing resources effectively. It's like having a remote control for my virtual machines!
 
-* *[Insert Screenshot: Start/Stop Instance in EC2 Console]*
-* *Caption: Mastering the lifecycle: starting and stopping my EC2 instance like a boss.*
+![Screenshot (2169)](https://github.com/user-attachments/assets/891e7ed9-92d8-4bfb-8b08-bbe52571fd1d)
+![Screenshot (2153)](https://github.com/user-attachments/assets/77974b2c-0246-44fe-87ba-247aaa219942)
+*Mastering the lifecycle: starting and stopping my EC2 instance like a boss.*
 
 ---
 
