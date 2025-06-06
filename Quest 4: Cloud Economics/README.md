@@ -1,7 +1,7 @@
 
 ---
 
-# Cloud Quest 4: Cloud Economics - Mastering Cloud Cost Estimation! 💸📊
+# Quest 4: Cloud Economics - Mastering Cloud Cost Estimation! 💸📊
 
 After a deep dive into EC2 management, **Quest 4: Cloud Economics** was a crucial mission focused on the financial side of cloud computing. This quest was all about understanding and estimating the costs of running applications on AWS, ensuring I build not just secure, but also cost-efficient solutions. Think of it as putting on my financial analyst hat for the cloud – and yes, it felt incredibly empowering! 🥂
 
