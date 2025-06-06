@@ -88,10 +88,67 @@ This section outlines the key steps undertaken to achieve the lab objectives, bu
 
 ### 4. Implementing the Auto Scaling Group
 
-* The core of the auto-healing and scaling solution involved creating an Auto Scaling Group. I configured this group to leverage the Launch Template I had just created. I set the desired, minimum, and maximum capacity parameters for the group, which dictate how many instances should ideally be running, and the boundaries for automatic scaling. While specific scaling policies (e.g., based on CPU utilization via CloudWatch alarms) are an inherent part of Auto Scaling, this setup laid the groundwork for dynamic capacity adjustments.
+* The core of the auto-healing and scaling solution involved creating an Auto Scaling Group. I configured this group to leverage the Launch Template I had just created. I set the desired, minimum, and maximum capacity parameters for the group, which dictate how many instances should ideally be running and the boundaries for automatic scaling. While specific scaling policies (e.g., Target Tracking scaling policy based on CPU utilization via CloudWatch alarms) are an inherent part of Auto Scaling, this setup laid the groundwork for dynamic capacity adjustments.
 
-![Auto Scaling Group Setup](images/autohealing_lab_04_asg_setup.png)
-*Overview of the Auto Scaling Group configuration, demonstrating its linkage to the Launch Template.*
+* **Navigated to Auto Scaling Groups:** From the EC2 console, I proceeded to the "Auto Scaling Groups" section in the left navigation pane.
+
+    ![Screenshot (5796)](https://github.com/user-attachments/assets/f77d2e5d-2ff9-40fe-a5fa-bade5c3410f0)
+    *Navigating to the Auto Scaling Groups section in the EC2 console.*
+
+* **Initiated Creation:** I clicked "Create Auto Scaling group" and selected the Launch Template that was created in the previous step as the basis for the new group.
+    * I gave the Auto Scaling group a descriptive name `RegularCustomerGameServer`.
+
+    ![Screenshot (5797)](https://github.com/user-attachments/assets/47324885-1b70-4029-bd24-09f0f266a329)
+    ![Screenshot (5798)](https://github.com/user-attachments/assets/2cda6c05-156a-4f05-aaff-0d8656c79f82)
+    *Initiating the creation of a new Auto Scaling group and selecting the Launch Template.*
+
+* **Configured Group Details:**
+    * I specified the **Group size**, setting the `Desired capacity` to `2`, `Minimum capacity` to `2`, and `Maximum capacity` to `4` to ensure consistent availability.
+ 
+    ![Screenshot (5802)](https://github.com/user-attachments/assets/2d531330-5d69-4012-a177-fb5f265b2273)
+
+    * I selected the appropriate **VPC** and **subnets** to define where the instances would be launched.
+
+    ![Screenshot (5799)](https://github.com/user-attachments/assets/bb876d8f-993b-4427-b0d9-b2bb0b8d4737)
+
+* **Established Scaling Policies:** (This would involve configuring rules for automatic scaling based on metrics)
+    * I configured a **target tracking scaling policy** to automatically adjust capacity in response to demand, such as scaling out (adding instances) if CPU utilization exceeded 70%.
+
+    ![Screenshot (5803)](https://github.com/user-attachments/assets/36df7ff9-8bda-4112-862c-47b3f7e18934)
+
+* **Automatic Scaling Group Summary:**
+
+    ![Screenshot (5807)](https://github.com/user-attachments/assets/adf68037-33d7-47a6-b90f-7cc75776dcf9)
+    ![Screenshot (5808)](https://github.com/user-attachments/assets/08c45ca2-6715-45de-a874-40028718b028)
+    ![Screenshot (5809)](https://github.com/user-attachments/assets/e23f911f-8ce0-4efb-bbda-83cdb32aef82)
+    ![Screenshot (5810)](https://github.com/user-attachments/assets/d0b09c05-e91c-43d8-88cc-3d23076883dd)
+
+* **Automatic Scaling Group Created:**
+  
+    ![Screenshot (5811)](https://github.com/user-attachments/assets/6e0c62be-db15-4f05-941c-4ac29f3a3727)
+
+    ![Screenshot (5812)](https://github.com/user-attachments/assets/0fe0b7ff-8862-4aa7-b45a-836d795398b3)
+
+    ![Screenshot (5814)](https://github.com/user-attachments/assets/e6f80cf4-f8c1-43e5-95c9-ad16205333fc)
+
+    ![Screenshot (5813)](https://github.com/user-attachments/assets/9aa5a863-d89c-4876-a01e-a9457aa08396)
+
+* **For advanced automation**, I also explored setting up **scheduled actions**, like automatically scaling out or scaling down the number of instances to 0 at a specific time (e.g., 01:00 AM daily) to optimize costs during off-peak hours.
+
+    * **Scaling Out Scheduled Action:**
+
+    ![Screenshot (5815)](https://github.com/user-attachments/assets/76dc7950-d645-44ac-ac1b-3758a106d92b)
+
+    ![Screenshot (5816)](https://github.com/user-attachments/assets/23d6b7b4-64b1-4dfa-be02-d0a0aaf0df8d)
+
+    ![Screenshot (5817)](https://github.com/user-attachments/assets/994a96b6-dd25-47d9-a73a-0e7bef74669b)
+
+    * **Scaling Down Scheduled Action:**
+ 
+    ![Screenshot (5818)](https://github.com/user-attachments/assets/f78a5bc3-3ac2-435b-b057-f2b704699ba8)
+
+    ![Screenshot (5820)](https://github.com/user-attachments/assets/c62cf776-a5eb-4088-8a98-bd458c648084)
+    *Setting up scheduled actions for the Auto Scaling group.*
 
 ---
 
@@ -116,7 +173,7 @@ Mastering auto-healing and scaling is paramount for deploying production-grade a
 
 Curious about cloud scalability, Auto Scaling best practices, or just want to chat about building resilient cloud applications? Let’s connect!
 
-* 💼 [My LinkedIn Profile](https://www.linkedin.com/in/mercy-ndonga/)
+* 💼 [LinkedIn Profile](https://www.linkedin.com/in/mercy-ndonga/)
 * 🌍 Based in Nairobi, Kenya | Globally curious
 
 ---
