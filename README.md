@@ -1,6 +1,6 @@
 # My AWS Cloud Quest Conquests: Leveling Up in the Cloud! 👑☁️
 
-Welcome to my digital playground, where cloud meets cute and learning is anything but boring! ✨💅. This repository is the official chronicle of my journey through **AWS Cloud Quest**, Amazon's gamified learning experience designed to turn cloud curious minds into certified cloud connoisseurs. Get ready for some fierce learning, even fiercer problem-solving, and all the legendary energy you'd expect from a Cloud Security Specialist in the making! 🥂
+Welcome to my digital playground, where learning is anything but boring! ✨💅. This repository is the official chronicle of my journey through **AWS Cloud Quest**, Amazon's gamified learning experience designed to turn cloud curious minds into certified cloud connoisseurs. Get ready for some fierce learning, even fiercer problem-solving, and all the legendary energy you'd expect from a Cloud Security Specialist in the making! 🥂
 
 ---
 
@@ -48,7 +48,7 @@ Each Quest folder contains its own `README.md` with objectives, steps, key takea
 
 Curious about AWS Cloud Quest, cloud security, or just want to chat about making tech fierce and fun? Let’s connect!
 
-* 💼 [My LinkedIn Profile](https://www.linkedin.com/in/mercy-ndonga) *
+* 💼 [My LinkedIn Profile](https://www.linkedin.com/in/mercy-ndonga)
 * 🌍 Nairobi-based, globally curious 🌍
 
 ---
