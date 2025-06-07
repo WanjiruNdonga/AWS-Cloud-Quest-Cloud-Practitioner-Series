@@ -19,10 +19,6 @@ This lab allowed me to achieve proficiency in essential DynamoDB operations.
 * Deleting an item from the table.
 * Deleting a DynamoDB table.
 
-### DIY Goals:
-* Create a new item in the `UserVideoHistory` table with a unique `userid` value.
-* Add a new attribute named "rating" with a Number data type to the newly created record.
-
 ---
 
 ## 🛠️ AWS Services I Conquered: My NoSQL Toolkit! 🛠️
@@ -51,10 +47,10 @@ I began by accessing the AWS Management Console and navigating to the DynamoDB s
 
 ### 2. Creating a New DynamoDB Table
 
-I created a new DynamoDB table, defining its primary key. This foundational step sets up the structure for storing items.
+I created a new DynamoDB table, defining its primary (partition) & sort key. This foundational step sets up the structure for storing items.
 * I clicked "Create table" in the DynamoDB console.
-* I specified the table name i.e., `UserVideoHistory`.
-* I defined the primary key, including a partition key (i.e., `userid`) and an optional sort key (i.e., `lastDateWatched`).
+* I specified the table name i.e. `UserVideoHistory`.
+* I defined the primary key, including a partition key (i.e. `userid`) and an optional sort key (i.e., `lastDateWatched`).
 
 ![Screenshot (5549)](https://github.com/user-attachments/assets/34f55041-a98b-4504-b0d0-81c7e36afaf6)
 *Defining a new DynamoDB table with its primary key attributes.*
@@ -81,7 +77,7 @@ With the table successfully created, I proceeded to populate it by adding a new 
 
 ![Screenshot (5556)](https://github.com/user-attachments/assets/d820e266-d295-4fcf-8614-b83d2b7bfce9)
 
-* I input values for the defined attributes for the item and proceeded to create the item.
+* I input values for the item's defined attributes and proceeded to create the item.
 
 ![Screenshot (5557)](https://github.com/user-attachments/assets/61660fef-c42d-40c3-8b42-373969b96b9b)
 
@@ -89,39 +85,49 @@ With the table successfully created, I proceeded to populate it by adding a new 
 
 ---
 
-### 4. Adding a New Attribute to an Existing Item
+### 4. Adding New Attributes to an Existing Item
 
-To enrich an existing record, I added a new attribute with its corresponding value to an item already present in the table. This demonstrated the schema-less nature of NoSQL databases.
+To enrich an existing record, I added new attributes i.e. `videoID`, `preferredLanguage` & `supportedDeviceTypes`, with their corresponding values to the item already present in the table. This demonstrated the schema-less nature of NoSQL databases.
 
-![Add New Attribute](images/nosql_lab_04_add_attribute.png)
-*Adding a new attribute to an existing item in the table.*
+![Screenshot (5561)](https://github.com/user-attachments/assets/35bfb7ea-d8f2-49c2-ae28-51f082413d62)
 
----
+![Screenshot (5562)](https://github.com/user-attachments/assets/96bfdc73-2b7b-4369-ae84-090692cdb189)
 
-### 5. Updating an Existing Attribute
+![Screenshot (5563)](https://github.com/user-attachments/assets/1418bc72-3d52-4f06-b5a4-434c28368b6e)
 
-I practiced modifying data by updating the value of an existing attribute within an item.
-
-![Update Attribute](images/nosql_lab_05_update_attribute.png)
-*Caption: Modifying the value of an existing attribute for an item.*
+![Screenshot (5564)](https://github.com/user-attachments/assets/fab37d3e-7a9c-45c6-ae92-5098898a382f)
 
 ---
 
-### 6. Deleting an Attribute from an Item
+### 5. Updating the Item with a New Attribute
 
-To demonstrate data manipulation flexibility, I specifically deleted an attribute from an existing item, leaving the rest of the item intact.
+I practiced modifying data by updating the item with a new attribute i.e. `lastStopTime`
 
-![Delete Attribute](images/nosql_lab_06_delete_attribute.png)
-*Caption: Removing a specific attribute from an item in the table.*
+![Screenshot (5565)](https://github.com/user-attachments/assets/d91530b5-30c5-4646-a9f2-da4a83bfe5fa)
+
+![Screenshot (5566)](https://github.com/user-attachments/assets/b7418f9f-fa60-4cf3-9870-a3cdd67376d0)
 
 ---
 
-### 7. Deleting an Item from the Table
+### 6. Querying Items Using the Primary Key
 
-I performed a complete item deletion, removing an entire record from the DynamoDB table.
+To retrieve specific items efficiently and confirm data presence, I performed a query using the table's primary key.
+* From the "Explore items" tab:
+* I entered a specific values for the table's partition key and sort key into the search field.
+* I then executed the query (e.g., by pressing Enter or clicking "Run") to retrieve all items that match the specified primary key.
 
-![Delete Item](images/nosql_lab_07_delete_item.png)
-*Caption: Deleting an entire item (record) from the DynamoDB table.*
+![Screenshot (5568)](https://github.com/user-attachments/assets/dc759eff-b324-4267-86c3-c8f8b7752277)
+![Screenshot (5569)](https://github.com/user-attachments/assets/cf7d9402-d698-40db-bb67-25b2b9a5e764)
+*Executing a query operation using the primary key to retrieve specific items from the table.*
+
+---
+
+### 7. Deleting an Attribute from an Item
+
+To demonstrate data manipulation flexibility, I specifically `removed` an attribute from an existing item, leaving the rest of the item intact.
+
+![Screenshot (5574)](https://github.com/user-attachments/assets/fe7ef154-0bb8-4f5f-ab83-971e17aef874)
+*Removing a specific attribute from an item in the table.*
 
 ---
 
