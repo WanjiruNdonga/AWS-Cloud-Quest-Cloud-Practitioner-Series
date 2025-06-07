@@ -13,11 +13,9 @@ This lab allowed me to achieve proficiency in essential DynamoDB operations.
 ### Practice Lab Goals:
 * Creating a new Amazon DynamoDB table.
 * Adding an item to the table.
-* Adding a new attribute to an existing item in the table.
-* Updating an existing attribute in an item.
+* Adding new attributes to an existing item in the table.
+* Updating an attribute in an item.
 * Deleting an attribute from an item.
-* Deleting an item from the table.
-* Deleting a DynamoDB table.
 
 ---
 
