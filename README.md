@@ -1,12 +1,12 @@
 # My AWS Cloud Quest Conquests: Leveling Up in the Cloud! 👑☁️
 
-Welcome to my digital playground, where learning is anything but boring! ✨💅. This repository is the official chronicle of my journey through **AWS Cloud Quest**, Amazon's gamified learning experience designed to turn cloud curious minds into certified cloud connoisseurs. Get ready for some fierce learning, even fiercer problem-solving, and all the legendary energy you'd expect from a Cloud Security Specialist in the making! 🥂
+This repository is the official chronicle of my journey through **AWS Cloud Quest**, Amazon's gamified learning experience designed to turn cloud curious minds into certified cloud connoisseurs. Get ready for some fierce learning, even fiercer problem-solving, and all the legendary energy you'd expect from a Cloud Security Specialist in the making! 🥂
 
 ---
 
 ### What is AWS Cloud Quest? (And Why I'm Obsessed)
 
-Forget dry textbooks and endless lectures. **AWS Cloud Quest** isn't your grandma's cloud training. It's an immersive, role-playing game that puts you directly into a vibrant virtual city where cloud challenges await!
+Forget dry textbooks and endless lectures. **AWS Cloud Quest** isn't your typical cloud training. It's an immersive, role-playing game that puts you directly into a vibrant virtual city where cloud challenges await!
 
 * **Gamified Learning:** It transforms complex AWS concepts into engaging missions and quests. Think less "coursework," more "epic adventure."
 * **Hands-On Practice:** The core of the game involves deploying real AWS services in a simulated environment to solve real-world problems for the virtual city's inhabitants. No theory without practice here!
